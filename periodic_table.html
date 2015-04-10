@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head> 
+	
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<title> Periodic Flash Cards</title>
+		
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/periodic_table.css">
+  		<script src="js/periodic_table.js"></script>
+	</head>
+		
+	<body>
+		
+		<div class="title"> 
+			<p>Periodic Flash Cards</p>
+			
+			<div class="credit">
+				<p>By Kion And Ned</p>
+			</div>
+		</div>
+		
+		
+		<img src="images/PeriodicTable.png" alt="Periodic Table" id="picture" usemap="#elements">
+		<map name="elements" id="elements">
+			<!--(x1, y1, x2, y2)-->
+			<!-- x-ratio: 50 
+				 y-ratio: 55
+				 space between: 10 -->
+			<area shape="rect" class="box" coords="65,50,115,105" onclick="getElement(0)" /> 
+			<area shape="rect" class="box" coords="1005,50,1055,105" onclick="getElement(1)" />
+			<area shape="rect" class="box" coords="65,110,115,160" onclick="getElement(2)" /> 
+			<area shape="rect" class="box" coords="120,110,170,160" onclick="getElement(3)" /> 
+			<area shape="rect" class="box" coords="735,110,775,160" onclick="getElement(4)" /> 
+			<area shape="rect" class="box" coords="785,110,830,160" onclick="getElement(5)" /> 
+			<area shape="rect" class="box" coords="840,110,890,160" onclick="getElement(6)" /> 
+			<area shape="rect" class="box" coords="900,110,945,160" onclick="getElement(7)" /> 
+			
+			
+			<area shape="rect" class="box" coords="900,110,945,160" onclick="getElement(8)" /> 
+			<area shape="rect" class="box" coords="900,110,945,160" onclick="getElement(9)" /> 
+			<area shape="rect" class="box" coords="900,110,945,160" onclick="getElement(10)" /> 
+			<area shape="rect" class="box" coords="900,110,945,160" onclick="getElement(11)" /> 
+			<area shape="rect" class="box" coords="900,110,945,160" onclick="getElement(12)" /> 
+			<area shape="rect" class="box" coords="900,110,945,160" onclick="getElement(13)" /> 
+			<area shape="rect" class="box" coords="900,110,945,160" onclick="getElement(14)" /> 
+			<area shape="rect" class="box" coords="900,110,945,160" onclick="getElement(15)" /> 
+			<area shape="rect" class="box" coords="900,110,945,160" onclick="getElement(16)" /> 
+			<area shape="rect" class="box" coords="900,110,945,160" onclick="getElement(17)" /> 
+			<area shape="rect" class="box" coords="900,110,945,160" onclick="getElement(18)" /> 
+			
+			
+			
+
+			<area shape="rect" class="box" coords="65,165,115,220" onclick="getElement(10)" /> 
+			
+		</map>
+		
+		<div class="FC" id="FlashCard">
+		
+			<form onsubmit="return flashCard(this)"> 
+				Please Enter an Atomic Number:
+				<input type="AtomicNumber" id="AtomicNumber"> 
+				<input type="submit"> </form>
+				
+			</form>
+			
+			<div id="output"> </div>
+		</div>
+		
+		
+		
+	</body>
+	
+</html>

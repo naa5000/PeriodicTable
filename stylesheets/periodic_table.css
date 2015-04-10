@@ -1,0 +1,33 @@
+body {
+	background-color:#FFFF99;
+}
+
+div.title {
+	text-align:center; 
+	border:3px solid black; 
+	padding 2px; 
+	font-size:200%;
+	background-color:#FFFFCC;
+}
+
+div.credit {
+	font-size:60%; 
+	text-align:center; 
+}
+
+#picture {
+	position:relative; 
+	left:125px; 
+	width:80%;  
+}
+
+div.FC {
+	border:3px solid black; 
+	padding:2px; 
+	background-color:#FFFFCC;
+}
+
+.box {
+	cursor:pointer; 
+}
+		
