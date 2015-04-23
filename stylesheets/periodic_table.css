@@ -2,6 +2,13 @@ body {
 	background-color:#FFFF99;
 }
 
+.tile{
+	border-style: groove;
+    border-width: 3px;
+	width: 30;
+	height: 40;
+}
+
 div.title {
 	text-align:center; 
 	border:3px solid black; 
@@ -30,3 +37,19 @@ div.FC {
 	cursor:pointer; 
 }
 		
+#elementCard {
+	margin-left: 50px;
+	margin-top: 50px;
+	font-size: 20px;
+}
+
+#checkAnswerButton {
+	margin-top: 10px; 
+	margin-left: 50px;
+}
+
+#answer {
+	margin-top: 10px;
+	font-size: 20px;
+	margin-left: 50px;
+}

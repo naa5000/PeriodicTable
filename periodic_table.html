@@ -13,14 +13,18 @@
 		
 	<body>
 		
-		<div class="title"> 
-			<p>Periodic Flash Cards</p>
-			
-			<div class="credit">
-				<p>By Kion And Ned</p>
-			</div>
-		</div>
+
+		<div class="FC" id="Element">
 		
+			<form onsubmit="return flashCard(this)"> 
+				Please Enter an Atomic Number:
+				<input type="AtomicNumber" id="AtomicNumber"> 
+				<input type="submit"> </form>
+				
+			</form>
+			
+			<div id="output"> </div>
+		</div>
 		
 		<img src="images/PeriodicTable.png" alt="Periodic Table" id="picture" usemap="#elements">
 		<map name="elements" id="elements">
@@ -146,19 +150,9 @@
 			
 					
 			
-		</map>
 		
-		<div class="FC" id="FlashCard">
 		
-			<form onsubmit="return flashCard(this)"> 
-				Please Enter an Atomic Number:
-				<input type="AtomicNumber" id="AtomicNumber"> 
-				<input type="submit"> </form>
-				
-			</form>
-			
-			<div id="output"> </div>
-		</div>
+		
 		
 		
 		

@@ -1,5 +1,5 @@
 function flashCard(myForm) {
-	var AN = document.getElementById("AtomicNumber").value;
+	var elements = document.getElementById("AtomicNumber").value;
 	PT[AN - 1].toString();  
 	return false; 
 }
@@ -11,10 +11,11 @@ function Element(AN, name, AS, AM) {
 	this.AM = AM; 
 
 	this.toString = function() {
-		var string = this.name + '<br><br>' +
-					 this.AN + '<br><br>' +
-					 this.AM + '<br><br>' +
-					 this.AS; 
+		var string = "<br>Name: " + this.name + '<br>' +
+					 "Atomic Number: " + this.AN + '<br>' +
+					 "Atomic Mass: " + this.AM + '<br>' +
+					 "Atomic Symbol: " + this.AS; 
+					 //"<img class = 'tile' src='images/" + AN + ".gif' border = 'solid'>"; 
 		document.getElementById('output').innerHTML = string; 
 	}
 }
@@ -22,7 +23,40 @@ function Element(AN, name, AS, AM) {
 function getElement(num){
 	elements[num].toString();
 }
-	
+
+var rand1;
+var rand2;
+
+function displayQuizCard(){
+	rand1 = Math.floor((Math.random() * 118) + 1);
+	rand2 = Math.floor((Math.random() * 2) + 1);
+	var string= "<img class = 'tile' src='images/" + rand1 + ".gif' border = 'solid'>" + 
+				'<br /><br />' + questions[rand2-1]; 
+	document.getElementById('elementCard').innerHTML = string;
+}	
+
+function displayAnswer(){
+	if (rand2 === 1)
+		document.getElementById('answer').innerHTML = elements[rand1-1].name;
+	else
+		document.getElementById('answer').innerHTML = elements[rand1-1].AM;
+
+}
+
+function refresh(){
+	window.location = "quiz.html"	
+}
+
+function getElementAN(num){
+	elements[num]	
+}
+
+var questions = [
+	"What is this element's Name?",
+	"What is this element's Atomic Mass?"
+];
+
+
 var elements = [
 	new Element(1,	'Hydrogen',		'H',	1.0079),
 	new Element(2,	'Helium',		'He',	4.0026),
